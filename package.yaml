@@ -23,7 +23,8 @@ dependencies:
 - base       >= 4.7 && < 5
 - megaparsec >=9.5 && <10
 - process    >=1.6 && <2
-- directory >= 1.3 && <2
+- directory  >= 1.3 && <2
+- text       >=2.0.2 && <3
 
 ghc-options:
 - -Wall
@@ -38,6 +39,8 @@ ghc-options:
 
 library:
   source-dirs: src
+  default-extensions:
+    - RecursiveDo
 
 executables:
   bus-exe:
