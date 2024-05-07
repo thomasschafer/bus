@@ -41,7 +41,7 @@ data GoStatement
   | GSInterfaceDef String [(String, GoType)]
   deriving (Show)
 
--- TODO: add more here
+-- TODO: add more above
 
 statementToGo :: Statement -> ([String], GoStatement) -- first element is imports
 statementToGo (StLet name (BVString val)) = ([], GSVarDef name (GVString val))
