@@ -1,6 +1,14 @@
+
+
+
+
 let a = 1;
-let b = 2; let cccaa = 3;
+
+let b = 2;
 print(a);
+let c     =   99; print(c);
 
       print(b);
+
+
 

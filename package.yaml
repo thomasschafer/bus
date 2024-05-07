@@ -41,6 +41,7 @@ library:
   source-dirs: src
   default-extensions:
     - RecursiveDo
+    - LambdaCase
 
 executables:
   bus-exe:
