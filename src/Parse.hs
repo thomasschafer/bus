@@ -48,4 +48,6 @@ statement :: Parser Statement
 statement = letStatement <|> printStatement
 
 statements :: Parser [Statement]
-statements = ws *> sepEndBy statement (ws *> char ';' <* ws) <* eof -- TODO: don't require semi-colons
+-- TODO: don't require semi-colons: a line should be terminated by either semi-colons or the next line being no more indented by the current line.
+-- If the line below *is* indented by more than the current, that should be viewed as a continuation, and an error thrown if this is not the case
+statements = ws *> sepEndBy statement (ws *> char ';' <* ws) <* eof
